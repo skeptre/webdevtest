@@ -2,8 +2,12 @@
 <html lang="EN">
   <head>
     <title>My First Website</title>
+    <link rel="icon" type="image/png" href="Media/favicon.png" />
   </head>
   <body>
+    <header>
+      <h1>Welcome</h1>
+    </header>
     <h1>This is an H1 heading</h1>
     <h2>This is something</h2>
     <h3>This is something</h3>
@@ -24,13 +28,14 @@
     <br />
     <a href="mailto:test@fake.com">Email</a>
 
-    <a href="https://www.google.com"
-      ><img
+    <a href="https://www.google.com">
+      <img
         src="Media/ProfilePictureSuit.jpg"
         alt="Profile Picture Suit"
         height="200"
         width="200"
-    /></a>
+      />
+    </a>
     <hr />
     <audio controls>
       <source
@@ -39,13 +44,6 @@
       />
     </audio>
     <hr />
-     <video
-      src="https://www.youtube.com/watch?v=HGTJBPNC-Gw&ab_channel=BroCode"
-      controls
-      autoplay
-      width="800"
-      height="800"
-    ></video>
 
     <iframe
       width="560"
@@ -57,5 +55,123 @@
       referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen
     ></iframe>
+
+    <table border="1">
+      <colgroup>
+        <col style="background-color: lightblue" />
+        <!-- First column -->
+        <col style="background-color: lightgreen" />
+        <!-- Second column -->
+        <col style="background-color: lightcoral" />
+        <!-- Third column -->
+      </colgroup>
+      <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+      </tr>
+      <tr>
+        <td>Row 1, Cell 1</td>
+        <td>Row 1, Cell 2</td>
+        <td>Row 1, Cell 3</td>
+      </tr>
+      <tr>
+        <td>Row 2, Cell 1</td>
+        <td>Row 2, Cell 2</td>
+        <td>Row 2, Cell 3</td>
+      </tr>
+    </table>
+
+    <form action="index.php" method="POST">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        id="username"
+        placeholder="lolol"
+        minlength="6"
+        maxlength="20"
+      />
+      <input type="password" placeholder="<PASSWORD>" />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+      <input
+        type="tel"
+        id="phone"
+        placeholder="Phone"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      />
+      <input type="color" id="color" />
+      <br />
+      <input type="date" id="date" />
+      <br />
+      <input type="time" id="time" />
+      <br />
+      <input type="range" id="range" min="50" max="100" />
+      <br />
+      <input type="checkbox" id="checkbox" />
+      <br />
+      <input type="radio" id="radio" />
+      <br />
+      <input type="file" id="file" />
+      <br />
+      <input type="url" id="url" />
+      <br />
+      <input type="search" id="search" />
+      <br />
+
+      <label>Title:</label>
+      <br />
+
+      <input type="radio" id="Mr" value="Mr" name="title" />
+      <label for="Mr">Mr</label>
+      <br />
+
+      <input type="radio" id="Mrs" value="Mrs" name="title" />
+      <label for="Mrs">Mrs</label>
+      <br />
+
+      <input type="radio" id="PhD" value="PhD" name="title" />
+      <label for="PhD">PhD</label>
+      <br />
+
+      <input type="radio" id="Young" value="Young" name="title" />
+      <select>
+        <option value=""></option>
+        <option value="Young">Young</option>
+        <option value="Old">Old</option>
+        <option value="Old Asf">Old Asf</option>
+      </select>
+      <br />
+      <label for="file">File</label>
+    </form>
+
+    <button
+      id="toggle"
+      onclick="toggleText()"
+      style="
+        font-size: 26px;
+        background-color: lightblue;
+        color: forestgreen;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        width: 200px;
+        height: 50px;
+      "
+    >
+      0
+    </button>
+    <footer>
+      <p>Copyright &copy; 2025</p>
+    </footer>
+
+    <script>
+      let counter = 0;
+      function toggleText() {
+        let button = document.getElementById("toggle");
+        counter++;
+        button.innerHTML = counter;
+      }
+    </script>
   </body>
 </html>
