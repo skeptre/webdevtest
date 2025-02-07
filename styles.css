@@ -1,11 +1,39 @@
-h1 {
-    color: red;
+body {
+    background-color: #ffffff;
+    margin: 0;
+}
+#idOne{
+    color: #e7e0de;
 }
 
-/*.one {*/
-/*    color: blue;*/
-/*}*/
+.classTwo{
+    color: rgb(222, 215, 215);
+}
 
-#oNe {
-    color: gold;
+
+h1 {
+    font-family: Verdana, Arial, serif;
+    text-shadow: 3px 3px 5px red, -3px -5px 5px blue;
+}
+
+pre{
+    font-family: "Lucida Console", "courier new", monospace;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.box{
+    border: 5px solid;
+    width: 200px;
+    height: 200px;
+    font-size: 5em;
+    margin: auto;
+}
+
+#box1{
+    background-color: red;
+
+}
+#box2{
+    background-color: green;
 }
