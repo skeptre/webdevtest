@@ -1,6 +1,8 @@
 body {
     background-color: #ffffff;
     margin: 0;
+    border: 3px solid;
+    display: flow-root;
 }
 #idOne{
     color: #e7e0de;
@@ -36,4 +38,12 @@ pre{
 }
 #box2{
     background-color: green;
+}
+#img1{
+    float: right;
+    margin-right: 10px;
+}
+
+#img2{
+    float: left;
 }
